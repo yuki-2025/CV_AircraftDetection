@@ -70,7 +70,7 @@ def main():
             "- If you want to identify the aircrafts in an image , you can upload it here.\n" \
             "- Video Detection also there You can just upload a video and download aircraft detected video as well"
         )   
-    st.title("Militiary Aircraft Detector")
+    st.title("Military Aircraft Detector")
     path="runs/train/YOLOv8s_100e_run2/weights/best.pt"
     model=YOLO(path)
     file = st.file_uploader("Upload a file", type=["jpg", "jpeg", "png", "gif", "mp4"])
