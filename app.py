@@ -108,12 +108,17 @@ def main():
                 st.image(str(image_path), width=200,caption=image_path.stem)
                 #st.text()  # Display filename without extension
     st.write("## Detected Video")
-    video_path = Path("sample_video.mp4")
-
-    if video_path.exists():
-        st.video(str(video_path))
-    else:
-        st.error(f"Video file not found: {video_path}")
+    try:
+        video_path = "sample_video.mp4"
+        video_html = f"""
+            <video width="700" controls>
+                <source src="{video_path}" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        """
+        st.markdown(video_html, unsafe_allow_html=True)
+    except Exception as e:
+        st.error(f"Error playing video: {e}")
 if __name__ == "__main__":
    
     main()
