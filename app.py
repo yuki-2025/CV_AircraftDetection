@@ -108,12 +108,12 @@ def main():
                 st.image(str(image_path), width=200,caption=image_path.stem)
                 #st.text()  # Display filename without extension
     st.write("## Detected Video")
-    try:
-        video_file = open("sample_video.mp4", "rb")
-        video_bytes = video_file.read()
-        st.video(video_bytes)
-    except Exception as e:
-        st.error(f"Error playing video: {e}")
+    video_path = Path("sample_video.mp4")
+
+    if video_path.exists():
+        st.video(str(video_path))
+    else:
+        st.error(f"Video file not found: {video_path}")
 if __name__ == "__main__":
    
     main()
