@@ -109,7 +109,9 @@ def main():
                 #st.text()  # Display filename without extension
     st.write("## Detected Video")
     try:
-        st.video('sample_video.mp4')
+        video_file = open("sample_video.mp4", "rb")
+        video_bytes = video_file.read()
+        st.video(video_bytes)
     except Exception as e:
         st.error(f"Error playing video: {e}")
 if __name__ == "__main__":
