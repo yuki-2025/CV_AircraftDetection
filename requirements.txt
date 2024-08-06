@@ -3,3 +3,4 @@ torchvision
 numpy
 streamlit
 ultralytics
+opencv-python
