@@ -1,5 +1,5 @@
-import torchvision
-import ultralytics
+#import torchvision
+#import ultralytics
 import os
 from ultralytics import YOLO
 import numpy as np 
