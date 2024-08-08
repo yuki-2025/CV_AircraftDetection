@@ -1,5 +1,7 @@
 # CV_AircraftDetection
-Military Aircraft Detection ( Image and Video) Yolov8 
+Deeplearning project: Military Aircraft Detection ( Image and Video) Yolov8 
+
+Transfer learning and Comouter Vision Model Training
 
 Try it: https://cvaircraftdetection-h8app.streamlit.app/
 
