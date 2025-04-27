@@ -1,6 +1,6 @@
 # CV_AircraftDetection
 Deeplearning project: Military Aircraft Detection ( Image and Video) Yolov8 
-### Transfer learning and Computer Vision Model Training
+#### Transfer learning and Computer Vision Model Training
 
 - This example provides a Jupyter Notebook (.ipynb) demonstrating how to train a YOLO model for military aircraft detection and model evaluation.
 
